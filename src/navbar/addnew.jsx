@@ -10,7 +10,7 @@ function Addnew (){
   // Fetch Items
   const fetchItems = async () => {
     try {
-      const response = await axios.get('http://localhost:5000/items');
+      const response = await axios.get('https://xperienceauto-backend.onrender.com/items');
       setItems(response.data);
     } catch (error) {
       console.error('Error fetching items:', error.message);
@@ -28,7 +28,7 @@ function Addnew (){
       return;
     }
     try {
-      await axios.post('http://localhost:5000/items', { name, description });
+      await axios.post('https://xperienceauto-backend.onrender.com/items', { name, description });
       fetchItems();
       setName('');
       setDescription('');
@@ -40,7 +40,7 @@ function Addnew (){
   // Delete Item
   const deleteItem = async (id) => {
     try {
-      await axios.delete(`http://localhost:5000/items/${id}`);
+      await axios.delete(`https://xperienceauto-backend.onrender.com/items/${id}`);
       // Update state locally for a better UX
       setItems(items.filter((item) => item._id !== id));
     } catch (error) {

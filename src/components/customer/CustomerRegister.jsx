@@ -24,7 +24,7 @@ function CustomerRegistration() {
     e.preventDefault();
     try {
       const response = await axios.post(
-        "http://localhost:5000/register",
+        "https://xperienceauto-backend.onrender.com/register",
         formData
       );
       if (response.status === 201) {

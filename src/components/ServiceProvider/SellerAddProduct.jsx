@@ -56,7 +56,7 @@
 //         formData.append("product_image", productData.productImage);
 
 //         try {
-//             const response = await axios.post("http://localhost:5000/seller/addProduct", formData, {
+//             const response = await axios.post("https://xperienceauto-backend.onrender.com/seller/addProduct", formData, {
 //                 headers: {
 //                     "Content-Type": "multipart/form-data",
 //                 },
@@ -234,7 +234,7 @@ function SellerAddProductPage() {
         formData.append("product_image", productData.productImage);
 
         try {
-            const response = await axios.post("http://localhost:5000/seller/addProduct", formData, {
+            const response = await axios.post("https://xperienceauto-backend.onrender.com/seller/addProduct", formData, {
                 headers: {
                     "Content-Type": "multipart/form-data",
                 },

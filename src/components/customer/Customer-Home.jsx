@@ -61,7 +61,7 @@ React.useEffect(() => {
     e.preventDefault();
 
     try {
-      const res = await axios.post('http://localhost:5000/send-email', {
+      const res = await axios.post('https://xperienceauto-backend.onrender.com/send-email', {
         userEmail,
         message,
       });

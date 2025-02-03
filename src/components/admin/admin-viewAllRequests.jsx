@@ -8,7 +8,7 @@
 //   useEffect(() => {
 //     const fetchViewAllRequests = async () => {
 //         try {
-//           const response = await axios.get("http://localhost:5000/admin/view-all-requests");
+//           const response = await axios.get("https://xperienceauto-backend.onrender.com/admin/view-all-requests");
 //           console.log("Response data:", response.data); // Log response data
 //           setViewRequests(response.data);
 //         } catch (err) {
@@ -117,7 +117,7 @@
 //   useEffect(() => {
 //     const fetchViewAllRequests = async () => {
 //       try {
-//         const response = await axios.get("http://localhost:5000/admin/view-all-requests");
+//         const response = await axios.get("https://xperienceauto-backend.onrender.com/admin/view-all-requests");
 //         console.log("Response data:", response.data); // Log response data
 //         setViewRequests(response.data);
 //       } catch (err) {
@@ -315,7 +315,7 @@
 //   useEffect(() => {
 //     const fetchViewAllRequests = async () => {
 //       try {
-//         const response = await axios.get("http://localhost:5000/admin/view-all-requests");
+//         const response = await axios.get("https://xperienceauto-backend.onrender.com/admin/view-all-requests");
 //         console.log("Response data:", response.data); // Log response data
 
 //         // Sort requests by date in descending order
@@ -356,7 +356,7 @@
 //         adminAddress,
 //       });
 
-//       await axios.put("http://localhost:5000/admin/status-action", {
+//       await axios.put("https://xperienceauto-backend.onrender.com/admin/status-action", {
 //         serviceName: request.serviceName,
 //         serviceType: request.serviceType,
 //         serviceDate: request.serviceDate,
@@ -369,7 +369,7 @@
 //       });
 
 //       // Refresh requests after status update
-//       const response = await axios.get("http://localhost:5000/admin/view-all-requests");
+//       const response = await axios.get("https://xperienceauto-backend.onrender.com/admin/view-all-requests");
 //       setViewRequests(
 //         response.data.sort((a, b) => new Date(b.serviceDate) - new Date(a.serviceDate))
 //       );
@@ -574,7 +574,7 @@ function AdminViewAllRequests() {
   useEffect(() => {
     const fetchViewAllRequests = async () => {
       try {
-        const response = await axios.get("http://localhost:5000/admin/view-all-requests");
+        const response = await axios.get("https://xperienceauto-backend.onrender.com/admin/view-all-requests");
         console.log("Response data:", response.data); // Log response data
 
         // Sort requests by date in descending order
@@ -625,7 +625,7 @@ function AdminViewAllRequests() {
         adminAddress,
       });
 
-      await axios.put("http://localhost:5000/admin/status-action", {
+      await axios.put("https://xperienceauto-backend.onrender.com/admin/status-action", {
         serviceName: request.serviceName,
         serviceType: request.serviceType,
         serviceDate: request.serviceDate,
@@ -638,7 +638,7 @@ function AdminViewAllRequests() {
       });
 
       // Refresh requests after status update
-      const response = await axios.get("http://localhost:5000/admin/view-all-requests");
+      const response = await axios.get("https://xperienceauto-backend.onrender.com/admin/view-all-requests");
       setViewRequests(
         response.data.sort((a, b) => new Date(b.serviceDate) - new Date(a.serviceDate))
       );

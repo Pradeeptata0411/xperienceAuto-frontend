@@ -28,7 +28,7 @@ function Register(){
       e.preventDefault();
 
       try{
-          const response = await axios.post("http://localhost:5000/register",formdata);
+          const response = await axios.post("https://xperienceauto-backend.onrender.com/register",formdata);
 
           if (response.status === 201) { // Check for status 201 (Created)
             setMessage(response.data.message);

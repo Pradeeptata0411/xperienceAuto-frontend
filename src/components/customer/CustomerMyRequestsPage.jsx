@@ -14,7 +14,7 @@
 //           setError('User email not found in local storage.');
 //           return;
 //         }
-//         const response = await axios.get(`http://localhost:5000/viewmyrequests/${userEmail}`);
+//         const response = await axios.get(`https://xperienceauto-backend.onrender.com/viewmyrequests/${userEmail}`);
 //         console.log("Fetched requests:", response.data); // Debug fetched data
 //         setRequests(response.data); // Update state with fetched data
 //       } catch (err) {
@@ -132,7 +132,7 @@ function CustomerMyRequests() {
           setError('User email not found in local storage.');
           return;
         }
-        const response = await axios.get(`http://localhost:5000/viewmyrequests/${userEmail}`);
+        const response = await axios.get(`https://xperienceauto-backend.onrender.com/viewmyrequests/${userEmail}`);
         setRequests(response.data); // Update state with fetched data
       } catch (err) {
         console.error('Error fetching requests:', err);

@@ -23,7 +23,7 @@ function SellerRegistrationPage() {
         e.preventDefault();
 
         try {
-            const response = await axios.post("http://localhost:5000/sellerRegisterData", sellerRegisterData);
+            const response = await axios.post("https://xperienceauto-backend.onrender.com/sellerRegisterData", sellerRegisterData);
 
             if (response.status === 201) { // Check for status 201 (Created)
                 setMessage("Registration Successful");

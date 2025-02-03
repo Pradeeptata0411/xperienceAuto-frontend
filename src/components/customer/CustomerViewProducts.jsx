@@ -20,7 +20,7 @@
 //     useEffect(() => {
 //         const fetchViewAllRequests = async () => {
 //             try {
-//                 const response = await axios.get("http://localhost:5000/customer/viewProducts");
+//                 const response = await axios.get("https://xperienceauto-backend.onrender.com/customer/viewProducts");
 //                 console.log("Fetched Data:", response.data);
 
 //                 setViewRequests(response.data);
@@ -78,7 +78,7 @@
 //                                                 <td style={{ border: "1px solid #ddd", padding: "8px" }}>₹{product.productPrice}</td>
 //                                                 <td style={{ border: "1px solid #ddd", padding: "8px" }} >
 //                                                     <img
-//                                                         src={`http://localhost:5000/uploads/${product.productImage}`}
+//                                                         src={`https://xperienceauto-backend.onrender.com/uploads/${product.productImage}`}
 //                                                         alt="Product"
 //                                                         style={{ width: "140px", height: "100px", borderRadius: "5px" }}
 //                                                     />
@@ -152,7 +152,7 @@
 //     useEffect(() => {
 //         const fetchViewAllRequests = async () => {
 //             try {
-//                 const response = await axios.get("http://localhost:5000/customer/viewProducts");
+//                 const response = await axios.get("https://xperienceauto-backend.onrender.com/customer/viewProducts");
 //                 console.log("Fetched Data:", response.data);
 //                 setViewRequests(response.data);
 //             } catch (err) {
@@ -232,7 +232,7 @@
 //                                 <div className="product" key={index}>
 //                                     <h2>{product.productName}</h2>
 //                                     <img
-//                                         src={`http://localhost:5000/uploads/${product.productImage}`}
+//                                         src={`https://xperienceauto-backend.onrender.com/uploads/${product.productImage}`}
 //                                         alt="Product"
 //                                         className="product-image"
 //                                     />
@@ -330,7 +330,7 @@
 //     useEffect(() => {
 //         const fetchViewAllRequests = async () => {
 //             try {
-//                 const response = await axios.get("http://localhost:5000/customer/viewProducts");
+//                 const response = await axios.get("https://xperienceauto-backend.onrender.com/customer/viewProducts");
 //                 console.log("Fetched Data:", response.data);
 //                 setViewRequests(response.data);
 //             } catch (err) {
@@ -417,7 +417,7 @@
 //                         <div className="product" key={index}>
 //                             <h2>{product.productName}</h2>
 //                             <img
-//                                 src={`http://localhost:5000/uploads/${product.productImage}`}
+//                                 src={`https://xperienceauto-backend.onrender.com/uploads/${product.productImage}`}
 //                                 alt="Product"
 //                                 className="product-image"
 //                             />
@@ -513,7 +513,7 @@
 //     useEffect(() => {
 //         const fetchViewAllRequests = async () => {
 //             try {
-//                 const response = await axios.get("http://localhost:5000/customer/viewProducts");
+//                 const response = await axios.get("https://xperienceauto-backend.onrender.com/customer/viewProducts");
 //                 console.log("Fetched Data:", response.data);
 //                 setViewRequests(response.data);
 //             } catch (err) {
@@ -634,7 +634,7 @@
 //                         <div className="product" key={index}>
 //                             <h2>{product.productName}</h2>
 //                             <img
-//                                 src={`http://localhost:5000/uploads/${product.productImage}`}
+//                                 src={`https://xperienceauto-backend.onrender.com/uploads/${product.productImage}`}
 //                                 alt="Product"
 //                                 className="product-image"
 //                             />
@@ -733,7 +733,7 @@ function CustomerViewProducts() {
     useEffect(() => {
         const fetchViewAllRequests = async () => {
             try {
-                const response = await axios.get("http://localhost:5000/customer/viewProducts");
+                const response = await axios.get("https://xperienceauto-backend.onrender.com/customer/viewProducts");
                 console.log("Fetched Data:", response.data);
                 setViewRequests(response.data);
             } catch (err) {
@@ -887,7 +887,7 @@ function CustomerViewProducts() {
                         <div className="product" key={index}>
                             <h2>{product.productName}</h2>
                             <img
-                                src={`http://localhost:5000/uploads/${product.productImage}`}
+                                src={`https://xperienceauto-backend.onrender.com/uploads/${product.productImage}`}
                                 alt="Product"
                                 className="product-image"
                             />

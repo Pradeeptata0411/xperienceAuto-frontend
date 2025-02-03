@@ -32,7 +32,7 @@
 //             };
 
 //             const response = await axios.post(
-//                 'http://localhost:5000/customer/serviceRequest',
+//                 'https://xperienceauto-backend.onrender.com/customer/serviceRequest',
 //                 requestData
 //             );
 //             if (response.status === 201) {
@@ -360,7 +360,7 @@ function CustomerServiceRequestPage() {
             };
 
             const response = await axios.post(
-                'http://localhost:5000/customer/serviceRequest',
+                'https://xperienceauto-backend.onrender.com/customer/serviceRequest',
                 requestData
             );
             if (response.status === 201) {

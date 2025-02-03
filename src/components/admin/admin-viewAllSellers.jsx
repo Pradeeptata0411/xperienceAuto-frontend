@@ -13,7 +13,7 @@
 //   useEffect(() => {
 //     const fetchViewAllRequests = async () => {
 //       try {
-//         const response = await axios.get("http://localhost:5000/admin/admin-viewAll-sellers");
+//         const response = await axios.get("https://xperienceauto-backend.onrender.com/admin/admin-viewAll-sellers");
 //         // console.log("Fetched Data:", response.data);
 //         setViewRequests(response.data);
 //       } catch (err) {
@@ -42,7 +42,7 @@
 //   const handleSellerStatusAction = async (request, newStatus) => {
 //     try {
 
-//       await axios.put("http://localhost:5000/admin/accept-seller_status_action", {
+//       await axios.put("https://xperienceauto-backend.onrender.com/admin/accept-seller_status_action", {
 //         sellerName: request.sellerName,
 //         sellerEmail: request.sellerEmail,
 //         sellerGender: request.sellerGender,
@@ -51,7 +51,7 @@
 //       });
 
 //       // Refresh requests after status update
-//       const response = await axios.get("http://localhost:5000/admin/view-all-requests");
+//       const response = await axios.get("https://xperienceauto-backend.onrender.com/admin/view-all-requests");
 //       setViewRequests(
 //         response.data.sort((a, b) => new Date(b.serviceDate) - new Date(a.serviceDate))
 //       );
@@ -237,7 +237,7 @@ function AdminViewAllSellersData() {
   useEffect(() => {
     const fetchViewAllRequests = async () => {
       try {
-        const response = await axios.get("http://localhost:5000/admin/admin-viewAll-sellers");
+        const response = await axios.get("https://xperienceauto-backend.onrender.com/admin/admin-viewAll-sellers");
         setViewRequests(response.data);
       } catch (err) {
         console.error("Error fetching requests:", err.message);
@@ -265,7 +265,7 @@ function AdminViewAllSellersData() {
   const handleSellerStatusAction = async (request, newStatus) => {
     try {
       // Update seller status
-      await axios.put("http://localhost:5000/admin/accept-seller_status_action", {
+      await axios.put("https://xperienceauto-backend.onrender.com/admin/accept-seller_status_action", {
         sellerName: request.sellerName,
         sellerEmail: request.sellerEmail,
         sellerGender: request.sellerGender,

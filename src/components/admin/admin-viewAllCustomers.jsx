@@ -23,7 +23,7 @@ function AdminViewAllCustomersData() {
   useEffect(() => {
     const fetchViewAllRequests = async () => {
       try {
-        const response = await axios.get("http://localhost:5000/admin/admin-viewAll-customers");
+        const response = await axios.get("https://xperienceauto-backend.onrender.com/admin/admin-viewAll-customers");
         console.log("Fetched Data:", response.data);
 
         // Optionally sort by serviceDate (if applicable)

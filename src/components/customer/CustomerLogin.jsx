@@ -21,7 +21,7 @@ export default function CustomerLogin({setIsLoggedIn}) { // Add setIsLoggedIn pr
         e.preventDefault();
     
         try {
-            const response = await axios.post('http://localhost:5000/login', formData);
+            const response = await axios.post('https://xperienceauto-backend.onrender.com/login', formData);
             
             if (response.status === 200) {
                 const userName = response.data.name; 

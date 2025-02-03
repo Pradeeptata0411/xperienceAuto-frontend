@@ -23,7 +23,7 @@
 //     }
 
 //     try {
-//       const response = await axios.get(`http://localhost:5000/seller/view-products/${userEmail}`);
+//       const response = await axios.get(`https://xperienceauto-backend.onrender.com/seller/view-products/${userEmail}`);
 //       const data = response.data;
 
 //       if (response.status === 200 && data.length > 0) {
@@ -51,7 +51,7 @@
 
 //   const confirmDelete = async () => {
 //     try {
-//       await axios.delete(`http://localhost:5000/seller/deleteProduct/${selectedProductId}`);
+//       await axios.delete(`https://xperienceauto-backend.onrender.com/seller/deleteProduct/${selectedProductId}`);
 //       setProducts(products.filter((product) => product._id !== selectedProductId));
 //       setShowPopup(false);
 //       showToastMessage();
@@ -100,7 +100,7 @@
 //                   <td style={{ border: "2px solid #ddd", padding: "10px" }}>
 //                     <img
 //                       style={{ width: "100px", height: "100px" }}
-//                       src={`http://localhost:5000/uploads/${product.productImage}`}
+//                       src={`https://xperienceauto-backend.onrender.com/uploads/${product.productImage}`}
 //                       alt={product.productName}
 //                     />
 //                   </td>
@@ -297,7 +297,7 @@
 //     }
 
 //     try {
-//       const response = await axios.get(`http://localhost:5000/seller/view-products/${userEmail}`);
+//       const response = await axios.get(`https://xperienceauto-backend.onrender.com/seller/view-products/${userEmail}`);
 //       const data = response.data;
 
 //       if (response.status === 200 && data.length > 0) {
@@ -325,7 +325,7 @@
 
 //   const confirmDelete = async () => {
 //     try {
-//       await axios.delete(`http://localhost:5000/seller/deleteProduct/${selectedProduct}`);
+//       await axios.delete(`https://xperienceauto-backend.onrender.com/seller/deleteProduct/${selectedProduct}`);
 //       setProducts(products.filter((product) => product._id !== selectedProduct));
 //       setShowPopup(false);
 //       showToastMessage();
@@ -349,7 +349,7 @@
 //   const handleUpdateSubmit = async (e) => {
 //     e.preventDefault();
 //     try {
-//       await axios.put(`http://localhost:5000/updateProduct/${selectedProduct._id}`, selectedProduct);
+//       await axios.put(`https://xperienceauto-backend.onrender.com/updateProduct/${selectedProduct._id}`, selectedProduct);
 //       fetchProducts();
 //       setShowUpdateForm(false);
 //     } catch (error) {
@@ -381,7 +381,7 @@
 //                   <td style={{ border: "2px solid #ddd", padding: "10px" }}>{product.manufacturer}</td>
 //                   <td style={{ border: "2px solid #ddd", padding: "10px" }}>₹{product.productPrice}</td>
 //                   <td style={{ border: "2px solid #ddd", padding: "10px" }}>
-//                     <img style={{ width: "100px", height: "100px" }} src={`http://localhost:5000/uploads/${product.productImage}`} alt={product.productName} />
+//                     <img style={{ width: "100px", height: "100px" }} src={`https://xperienceauto-backend.onrender.com/uploads/${product.productImage}`} alt={product.productName} />
 //                   </td>
 //                   <td style={{ border: "2px solid #ddd", padding: "10px" }}>
 //                     <button 
@@ -506,7 +506,7 @@ const SellerViewProduct = () => {
     }
 
     try {
-      const response = await axios.get(`http://localhost:5000/seller/view-products/${userEmail}`);
+      const response = await axios.get(`https://xperienceauto-backend.onrender.com/seller/view-products/${userEmail}`);
       const data = response.data;
 
       if (response.status === 200 && data.length > 0) {
@@ -534,7 +534,7 @@ const SellerViewProduct = () => {
 
   const confirmDelete = async () => {
     try {
-      await axios.delete(`http://localhost:5000/seller/deleteProduct/${selectedProduct}`);
+      await axios.delete(`https://xperienceauto-backend.onrender.com/seller/deleteProduct/${selectedProduct}`);
       setProducts(products.filter((product) => product._id !== selectedProduct));
       setShowPopup(false);
       showToastMessage();
@@ -558,7 +558,7 @@ const SellerViewProduct = () => {
   const handleUpdateSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.put(`http://localhost:5000/updateProduct/${selectedProduct._id}`, selectedProduct);
+      await axios.put(`https://xperienceauto-backend.onrender.com/updateProduct/${selectedProduct._id}`, selectedProduct);
       fetchProducts();
       setShowUpdateForm(false);
     } catch (error) {
@@ -592,7 +592,7 @@ const SellerViewProduct = () => {
                   <td style={{ border: "2px solid #ddd", padding: "10px" }}>
                     <img
                       style={{ width: "100px", height: "100px" }}
-                      src={`http://localhost:5000/uploads/${product.productImage}`}
+                      src={`https://xperienceauto-backend.onrender.com/uploads/${product.productImage}`}
                       alt={product.productName}
                     />
                   </td>
