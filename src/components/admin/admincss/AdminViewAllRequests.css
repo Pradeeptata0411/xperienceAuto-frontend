@@ -1,0 +1,99 @@
+.centered {
+    font-family: Arial, sans-serif;
+    margin: 0 auto;
+    max-width: 900px;
+  }
+  
+  h2 {
+    margin-top: 20px;
+    color: #333;
+  }
+  
+  .error-message {
+    color: red;
+    font-weight: bold;
+  }
+  
+  .filter-container {
+    margin-bottom: 30px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .checkbox-group {
+    display: flex;
+    gap: 19px;
+    align-items: center;
+  }
+  
+  .checkbox-group label {
+    font-size: 12px;
+    cursor: pointer;
+  }
+  
+  .checkbox-group input {
+    margin-right: 10px;
+  }
+  
+  .custom-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .custom-table th,
+  .custom-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+    font-size: 14px;
+  }
+  
+  .custom-table th {
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  .status.accepted {
+    background-color: #4caf50;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+  
+  .status.declined {
+    background-color: #f44336;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+  
+  .pagination {
+    margin-top: 20px;
+  }
+  
+  .pagination button {
+    background-color: #ddd;
+    border: none;
+    color: #333;
+    padding: 5px 10px;
+    margin: 0 3px;
+    height:30px;
+    gap: 19px;
+    width: 47px;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  .pagination button.active {
+    background-color: #4caf50;
+    color: white;
+    
+  }
+  
+  .pagination button:hover:not(.active) {
+    background-color: #bbb;
+  }
+  

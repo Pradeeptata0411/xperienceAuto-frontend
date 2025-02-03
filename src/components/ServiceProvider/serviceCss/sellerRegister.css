@@ -1,0 +1,92 @@
+.registration-container {
+    text-align: center;
+    
+    padding: 50px;
+}
+
+
+
+
+
+
+.registration-container h1 {
+    font-size: 24px;
+    color: #2B2E4A;
+}
+
+.registration-form {
+    width: 390px;
+    margin: 0 auto;
+    border-radius: 2px;
+   
+}
+
+@media (max-width: 768px) {
+    
+}
+
+
+.Seller-register-form-group {
+    margin-top: -22px;
+    margin-bottom: 10px;
+}
+
+.Seller-register-form-group label {
+    display: flex;
+    font-weight: 600;
+}
+
+.Seller-register-form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.Seller-register-form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.registration-button {
+    background: #2B2E4A;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.registration-button:hover {
+    background: rgb(239, 118, 6);
+}
+
+.Seller-register-form-group .fa {
+    margin-right: 10px;
+}
+ .seller_register_blink {
+animation: blink-animation 1s infinite alternate;
+
+}
+
+/* Keyframes animation for blinking */
+@keyframes seller_register_blink-animation {
+0% {
+opacity: 1;
+}
+100% {
+opacity: 0;
+}
+}
+
+/* Style for the <h5> element inside the .blink class */
+.seller_register_blink h5 {
+text-align: center;
+color: red;
+margin-top: -10px;
+}

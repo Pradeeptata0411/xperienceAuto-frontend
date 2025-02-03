@@ -1,0 +1,358 @@
+        /* Contact section */
+        .contact-section {
+            background-color: aliceblue;
+            padding: 1.5% 2%;
+            width: 100%;
+            font-size: medium;
+        }
+
+        .contact-title {
+            text-align: center;
+            color: #FF5733;
+            font-size: 2rem;
+            margin-bottom: 30px;
+        }
+
+        .contact-form {
+            background-color: #fffbfb;
+            padding: 30px;
+            border: 1px solid #fffcfc;
+            border-radius: 5px;
+        }
+
+        .contact-info {
+            background-color: #333;
+            padding: 30px;
+            border: 1px solid #ffffff;
+            border-radius: 5px;
+            color: #fff;
+        }
+
+        .contact-info h3 {
+            color: #FF5733;
+        }
+
+        .btn-custom {
+            background-color: #FF5733;
+            /* Change this to your desired button color */
+            color: white;
+            /* Text color for the button */
+        }
+
+        /* Hover effect (optional) */
+        .btn-custom:hover {
+            background-color: #FF5733;
+            /* Change this to the hover color you prefer */
+        }
+
+      
+
+        /* Footer Styles */
+        .footer {
+            background-color: #2B2E4A;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .text-primary {
+            color: #FF5733;
+        }
+       
+        
+        
+        /* Navbar Styles for Mobile View */
+        @media (max-width: 768px) {
+            .navbar {
+                background-color: #2B2E4A;
+                border-color: #2B2E4A;
+                padding: 5px 0;
+            }
+
+            .navbar-nav {
+                font-size: 14px;
+            }
+
+            /* Hide XperienceAuto in mobile view */
+            .navbar-brand .logo-mobile {
+                display: none;
+            }
+
+            /* Adjust the mobile navigation width */
+            .navbar-collapse {
+                max-height: calc(100vh - 55px);
+                /* Subtract the height of the navbar */
+                overflow-y: auto;
+            }
+
+            /* Center align mobile logo and icons */
+            .navbar-brand {
+                display: flex;
+                align-items: center;
+                text-align: center;
+                padding: 10px;
+            }
+
+            /* Move the toggle button to the left */
+            .navbar-toggle {
+                float: left;
+                margin-left: 15px;
+                margin-right: 0;
+            }
+
+            /* Adjust padding for navbar links */
+            .navbar-nav {
+                padding-top: 0;
+                padding-bottom: 0;
+            }
+
+            /* Style the mobile navigation links */
+            .navbar-nav li a {
+                padding: 10px 20px;
+                /* Adjust the padding as needed */
+                color: #fff;
+                /* Change link color */
+            }
+
+            /* Hide the image in mobile view */
+            .hide-in-mobile {
+                display: none;
+            }
+            
+            
+            
+            
+              .user-dropdown {
+                position: relative;
+                display: inline-block;
+                margin-left: 0px;
+            }
+
+            .user-dropdown .dropdown-menu {
+                position: absolute;
+                top: 100%;
+                left: 0;
+            }
+            
+            
+        .header-content {
+    position: absolute;
+    top: 100px; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    z-index: 10; /* Ensure content is above overlay */
+}
+
+.header-content h1 {
+    font-size: 4.5rem; /* Adjust the header text size to your preference */
+    text-shadow: blue;
+}
+
+.header-content h3 {
+    font-size: 1.8rem; /* Adjust the paragraph text size to your preference */
+}
+
+        
+       
+         /* Logo and App Name Styles */
+        .navbar-brand i {
+            margin-right: 5px;
+            font-size: 20px;
+            color: white;
+        }
+
+        /* Display the logo in desktop mode */
+        .navbar-brand img.desktop-show {
+            height: 40px;
+            width: auto;
+            margin-right: 5px;
+        }
+
+        .navbar-brand .app-name {
+            font-size: 20px;
+            color: white;
+        }
+
+        /* Add this CSS to your existing styles */
+        .partner-logos {
+            background-color: aliceblue;
+            padding: 20px 0;
+        }
+
+        .partner-logo {
+            background-color: #ffffff;
+            padding: 20px;
+            text-align: center;
+            border: 2px solid #000000;
+            /* Add a border for separation */
+        }
+
+        .partner-logo {
+            text-align: center;
+            /* Center-align the images */
+            margin-bottom: 0px;
+            /* Add some spacing between logos */
+        }
+
+        .partner-logo img {
+            width: 100%;
+            /* Set a fixed width for all images (adjust as needed) */
+            max-height: 100px;
+            /* Set a maximum height if necessary */
+        }
+
+
+        /* Style for the About section */
+        .container-fluid.py-5 {
+            background-color: aliceblue;
+            /* Background color */
+            padding: 5% 0;
+            /* Adjust padding as needed */
+        }
+
+        .container.pt-5.pb-3 {
+            text-align: center;
+        }
+
+        .display-1.text-primary {
+            font-size: 3rem;
+            /* Adjust the font size */
+        }
+
+        .display-4.text-uppercase.text-center.mb-5 {
+            color: #333;
+            /* Text color */
+        }
+
+        .row.justify-content-center {
+            margin-top: 30px;
+            /* Adjust the margin as needed */
+        }
+
+        .col-lg-10.text-center {
+            margin-bottom: 10px;
+            /* Adjust the margin as needed */
+        }
+
+        .w-75.mb-4 {
+            max-width: 100%;
+            /* Adjust the maximum width as needed */
+        }
+
+        /* Styling for the service items */
+        .col-lg-4.mb-2 {
+            padding: 0 5px;
+            /* Adjust the padding as needed */
+        }
+
+        .bg-light.p-4.mb-4 {
+            background-color: #fff;
+            /* Background color */
+            border: 1px solid #ddd;
+            /* Border color */
+            border-radius: 5px;
+            /* Border radius */
+            height: 100%;
+            /* Height of each service item */
+            transition: transform 0.3s ease;
+            /* Transition effect */
+        }
+
+        .bg-secondary.p-4.mb-4 {
+            background-color: #333;
+            /* Background color */
+            border: 1px solid #222;
+            /* Border color */
+            border-radius: 5px;
+            /* Border radius */
+            height: 100%;
+            /* Height of each service item */
+            transition: transform 0.3s ease;
+            /* Transition effect */
+        }
+
+        /* Icon color for service items */
+        .d-flex.align-items-center.justify-content-center.flex-shrink-0.bg-primary {
+            background-color: #FF5733;
+            /* Adjust the icon background color */
+            color: #fff;
+            /* Icon color */
+            border-radius: 50%;
+            /* Make the icon container circular */
+            width: 60px;
+            /* Adjust the width as needed */
+            height: 60px;
+            /* Adjust the height as needed */
+        }
+
+        /* Hover effect for service items */
+        .bg-light.p-4.mb-4:hover,
+        .bg-secondary.p-4.mb-4:hover {
+            transform: scale(1.05);
+            /* Scale up on hover */
+        }
+
+        /* Contact section */
+        .contact-section {
+            background-color: aliceblue;
+            padding: 1.5% 2%;
+            width: 100%;
+            font-size: medium;
+        }
+
+        .contact-title {
+            text-align: center;
+            color: #FF5733;
+            font-size: 2rem;
+            margin-bottom: 30px;
+        }
+
+        .contact-form {
+            background-color: #fffbfb;
+            padding: 30px;
+            border: 1px solid #fffcfc;
+            border-radius: 5px;
+        }
+
+        .contact-info {
+            background-color: #333;
+            padding: 30px;
+            border: 1px solid #ffffff;
+            border-radius: 5px;
+            color: #fff;
+        }
+
+        .contact-info h3 {
+            color: #FF5733;
+        }
+
+        .btn-custom {
+            background-color: #FF5733;
+            /* Change this to your desired button color */
+            color: white;
+            /* Text color for the button */
+        }
+
+        /* Hover effect (optional) */
+        .btn-custom:hover {
+            background-color: #FF5733;
+            /* Change this to the hover color you prefer */
+        }
+
+      
+
+        /* Footer Styles */
+        .footer {
+            background-color: #2B2E4A;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .text-primary {
+            color: #FF5733;
+        }
+        }
+        

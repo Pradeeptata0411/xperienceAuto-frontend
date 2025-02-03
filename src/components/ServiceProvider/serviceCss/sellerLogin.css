@@ -1,0 +1,162 @@
+
+.seller-form-group {
+    margin-bottom: 110px;
+    margin-top: -30px;
+}
+.seller-form-group {
+    margin-bottom: 20px; /* Add spacing between form elements */
+}
+.seller-form-group label {
+    display: flex;
+    font-weight: 600;
+}
+
+.seller-form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+
+.seller-login-button {
+    background: #2B2E4A;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    padding: 10px 20px;
+    font-size: 28px;
+    margin-top: 10px;
+    cursor: pointer;
+}    
+
+
+.seller-login-container {
+    text-align: center;
+}
+
+.seller-login-container h2 {
+    font-size: 24px;
+    color: #2B2E4A;
+}
+
+.seller-login-form {
+    width: 790px;
+    margin: 0 auto;
+    border-radius: 2px;    
+}
+
+
+
+/* Navbar Styles for Mobile View */
+@media (max-width: 768px) {
+
+    .hide-in-mobile {
+        display: none;
+    }
+    
+    .seller-login-container {
+    text-align: center;
+    padding: 50px;
+}
+
+.seller-login-container h2 {
+    font-size: 24px;
+    color: #2B2E4A;
+}
+
+.seller-login-form {
+    max-width: 400px;
+    margin: 0 auto;
+    margin-left: -10px;
+    border-radius: 2px;
+}
+
+.seller-login-button {
+    background: #2B2E4A;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.seller-login-button:hover {
+    background: rgb(239, 118, 6);
+    
+}
+
+/* Add Font Awesome icons */
+.form-group .fa {
+    margin-right: 10px;
+}
+ .blink {
+animation: blink-animation 1s infinite alternate;
+}
+ 
+  
+  
+    
+}
+
+
+.form-group {
+    margin-bottom: 110px;
+    margin-top: -8px;
+}
+.form-group {
+    margin-bottom: 20px; /* Add spacing between form elements */
+}
+.form-group label {
+    display: flex;
+    font-weight: 600;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.seller-login-button {
+    background: #2B2E4A;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.login-button:hover {
+    background: rgb(239, 118, 6);
+    
+}
+
+/* Add Font Awesome icons */
+.form-group .fa {
+    margin-right: 10px;
+}
+ .blink {
+animation: blink-animation 1s infinite alternate;
+}
+
+/* Keyframes animation for blinking */
+@keyframes blink-animation {
+0% {
+opacity: 1;
+}
+100% {
+opacity: 0;
+}
+}
+
+/* Style for the <h5> element inside the .blink class */
+.blink h5 {
+text-align: center;
+color: red;
+}
